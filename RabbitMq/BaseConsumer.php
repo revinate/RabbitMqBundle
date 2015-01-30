@@ -99,4 +99,11 @@ abstract class BaseConsumer extends BaseAmqp
     {
         return $this->idleTimeout;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCallback() {
+        return $this->callback;
+    }
 }
